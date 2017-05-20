@@ -41,4 +41,8 @@ bower.json
 .powenv
 
 # Ignore Byebug command history file.
+<<<<<<< HEAD
 .byebug_history
+=======
+.byebug_history
+>>>>>>> 85c9a92da5ad78d3149b7504d4d9980f4c0b6de5
