@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyRailsProject</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': => true %>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <title>Breadbox</title>
+    <div class="row">
+        <div class="col-md-4">
+          <h2>Portfolio Concept</h2>
+          <p>Portfolio Concept: take a few minutes to think about your portfolio site and outline the content you want to include. If you already have some Web Development experience and some prior projects, this is the opportunity to highlight them. If you have work from another industry, you can provide those of examples of your professional experience as well. If you have any design elements in mind, you can record these as well.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /col -->
+        <div class="col-md-4 goals">
+          <h2>Project Goals</h2>
+          <p>Project Goals: 
+               include any details about deadlines you want to meet and time you can commit each week.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /col -->
+        <div class="col-md-4">
+          <h2>Course Goals</h2>
+          <p>Course Goals: write down your professional learning goals. Are you changing careers, or advancing your existing skill set? Do you want to become a freelancer after this course or get hired as an entry level developer? Your course goals will be tied closely to your project goals.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /col -->
+      </div><!-- /row -->
+    <%= yield %>
+
+    <footer>
+      &copy; 2015 Bike Berlin
+    </footer>
+  </body>
+</html>
