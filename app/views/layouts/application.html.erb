@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyRailsProject</title>
-    <%= csrf_meta_tags %>
+    <title>BerlinBikes</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': => true %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<%= csrf_meta_tags %>
+
   </head>
 
   <body>
-    <div class="nav index-nav">
-      <ul><li><a href="index.html">Home</a></li></ul>
-      <ul><li><a href="about.html">About us</a></li></ul>
-      <ul><li><a href="contact.html">Get in Touch</a></li></ul>
-    </div>
-    <h1>Breadbox</h1>
-    <%= image_tag("racebike.jpg", class: "img-responsive my-image") %>
-    <div class="row">
-        <div class="col-md-4">
-          <h2>Portfolio Concept</h2>
-          <p>Portfolio Concept: take a few minutes to think about your portfolio site and outline the content you want to include. If you already have some Web Development experience and some prior projects, this is the opportunity to highlight them. If you have work from another industry, you can provide those of examples of your professional experience as well. If you have any design elements in mind, you can record these as well.
-          </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-        <div class="col-md-4 goals">
-          <h2>Project Goals</h2>
-          <p>Project Goals: 
-               include any details about deadlines you want to meet and time you can commit each week.
-          </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-        <div class="col-md-4">
-          <h2>Course Goals</h2>
-          <p>Course Goals: write down your professional learning goals. Are you changing careers, or advancing your existing skill set? Do you want to become a freelancer after this course or get hired as an entry level developer? Your course goals will be tied closely to your project goals.
-          </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-      </div><!-- /row -->
+
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index">Berlin Bike Shop</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="homenav"><a href="/static_pages/index">Home</a></li>
+            <li class="aboutnav"><a href="/static_pages/about">About</a></li>
+            <li class="contactnav"><a href="/static_pages/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
     <%= yield %>
 
     <footer>
-      &copy; 2015 Bike Berlin
+    &copy; 2017 Bike Berlin
     </footer>
   </body>
+  
 </html>
